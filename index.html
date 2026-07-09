@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VVS Authority Spot Board</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <main class="app">
+    <header>
+      <div>
+        <h1>💎 Pick A Spot 💎</h1>
+        <p>VVS Authority Spot Board</p>
+      </div>
+
+      <div class="controls">
+        <label>
+          Spots
+          <input id="spotCount" type="number" min="1" max="1000" value="100">
+        </label>
+        <button id="buildBtn">Build Board</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div><b id="total">100</b><span>Total</span></div>
+      <div><b id="taken">0</b><span>Taken</span></div>
+      <div><b id="remaining">100</b><span>Remaining</span></div>
+    </section>
+
+    <section class="board-wrap">
+      <div id="board" class="board"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
